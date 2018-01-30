@@ -21,9 +21,10 @@ class Tasks extends Component {
     this.setState({
       tasks: [
         {
-        key: 1,
-        val: {
-          title: 'Hello world',
+          key: 1,
+          val: {
+            title: 'Hello world',
+          }
         }
       ]
     })
