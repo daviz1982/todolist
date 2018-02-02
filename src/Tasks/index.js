@@ -87,6 +87,7 @@ class Tasks extends Component {
               <ActionDelete />
             </IconButton>
           }
+          style={{textAlign:'left'}}
         />
       </div>)
     })
@@ -96,6 +97,7 @@ class Tasks extends Component {
     return (
       <div>
         <BottomNavigation>
+        <div style={{display:'flex', alignItems:'center', justifyContent:'center', padding:15 }}>
           <TextField
             id="text-task"
             onKeyDown={(event)=>{this.handleKeyDown(event, this.handleAddTask)}}
@@ -108,6 +110,7 @@ class Tasks extends Component {
           >
             <ActionSend />
           </IconButton>
+          </div>
         </BottomNavigation>
       </div>
     )
